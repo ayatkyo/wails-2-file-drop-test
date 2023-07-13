@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>wails-2-file-drop-test</title>
+</head>
+<body>
+<div id="app">
+    <div class="input-wrapper">
+        <div id="input-section" class="section flex">
+            <div class="section-title">Input Test</div>
+            <div class="section-content is-center flex">
+                <input type="file" name="input-test" id="input-test" multiple>
+            </div>
+        </div>
+        <div id="drop-section" class="section flex">
+            <div class="section-title">Drop Test</div>
+            <div class="section-content is-center flex" id="drop-text">
+                DROP ZONE
+            </div>
+        </div>
+    </div>
+    <div class="result-wrapper">
+        <div class="section-title">Result</div>
+        <div id="result-source" class="section-helper"></div>
+        <ul id="result-list">
+        </ul>
+    </div>
+</div>
+<script src="./src/main.js" type="module"></script>
+</body>
+</html>

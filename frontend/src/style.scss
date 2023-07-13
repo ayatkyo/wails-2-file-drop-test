@@ -1,0 +1,85 @@
+html {
+    background-color: rgba(27, 38, 54, 1);
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+    url("assets/fonts/nunito-v16-latin-regular.woff2") format("woff2");
+}
+
+.flex {
+    flex: 1;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    .input-wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .result-wrapper {
+        width: 60vw;
+        height: 100vh;
+        background-color: whitesmoke;
+        color: rgb(67, 67, 67);
+    }
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    font-weight: bold;
+    padding: 0.5rem 1rem 0.25rem;
+    font-size: 1.25rem;
+}
+.section-helper {
+    padding: 0 1rem;
+    font-size: 0.75rem;
+}
+
+.section-content {
+    padding: .5rem;
+    &.is-center {
+        display: grid;
+        place-items: center;
+    }
+}
+
+#input-section {
+    background: seagreen;
+}
+
+#drop-section {
+    transition: all .5s ease-out;
+    background: slateblue;
+
+    &._dragover {
+        background: slategray;
+    }
+}
+
+#input-test {
+    width: 100%;
+}

@@ -34,4 +34,4 @@ require (
 
 replace github.com/wailsapp/wails/v2 => ./wails-v2
 
-replace github.com/wailsapp/go-webview2 => github.com/ayatkyo/go-webview2 v0.0.0-20230713185136-a8534edad9b9
+replace github.com/wailsapp/go-webview2 => github.com/ayatkyo/go-webview2 v0.0.0-20230713193101-04e405e67ec4

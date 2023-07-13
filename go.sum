@@ -1,5 +1,5 @@
-github.com/ayatkyo/go-webview2 v0.0.0-20230713185136-a8534edad9b9 h1:+YqNhZw71yQiT8x17S+kteTWg6dpanuGCV9aTEMtLFk=
-github.com/ayatkyo/go-webview2 v0.0.0-20230713185136-a8534edad9b9/go.mod h1:Uk2BePfCRzttBBjFrBmqKGJd41P6QIHeV9kTgIeOZNo=
+github.com/ayatkyo/go-webview2 v0.0.0-20230713193101-04e405e67ec4 h1:VJFQLx2qB6Ja2lUfgqBb3/omPqCa8ne10Bc/igHraFo=
+github.com/ayatkyo/go-webview2 v0.0.0-20230713193101-04e405e67ec4/go.mod h1:Uk2BePfCRzttBBjFrBmqKGJd41P6QIHeV9kTgIeOZNo=
 github.com/bep/debounce v1.2.1 h1:v67fRdBA9UQu2NhLFXrSg0Brw7CexQekrBwDMM8bzeY=
 github.com/bep/debounce v1.2.1/go.mod h1:H8yggRPQKLUhUoqrJC1bO2xNya7vanpDl7xR3ISbCJ0=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

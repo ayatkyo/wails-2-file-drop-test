@@ -27,7 +27,7 @@ cd .\local\wails\v2\internal\frontend\
 pnpm install && pnpm run build
 ```
 
-After that, run using this command:
+After that, back to root directory of `wails-2-file-drop-test`, then run demo using this command:
 
 ```bash
 wails dev

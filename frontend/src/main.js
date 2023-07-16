@@ -12,8 +12,21 @@ inputElem.addEventListener('change', function (e) {
     return;
   }
 
-  // send to native
-  chrome.webview.postMessageWithAdditionalObjects('wails-file-select', files);
+  window.runtime.ResolveFilePaths(files)
+  .then(res => {
+    resultSource.innerText = "success";
+    resultList.innerHTML = "";
+    for (var item of res) {
+      const listItem = document.createElement('li');
+      listItem.innerText = item.path;
+      resultList.appendChild(listItem);
+    }
+  })
+  .catch(err => {
+    resultSource.innerText = err;
+    resultList.innerHTML = "";
+    console.log(err);
+  })
 });
 
 // DROP ZONE
@@ -47,21 +60,19 @@ dropElem.addEventListener('drop', function (e) {
     files = [...e.dataTransfer.files];
   }
 
-  // send to native
-  chrome.webview.postMessageWithAdditionalObjects('wails-file-drop', files);
-});
-
-chrome.webview.addEventListener("message", function (e) {
-  if (!e.data?.event) {
-    return
-  }
-
-  resultSource.innerText = e.data.event;
-  resultList.innerHTML = "";
-
-  for (var item of e.data.data) {
-    const listItem = document.createElement('li');
-    listItem.innerText = item.path;
-    resultList.appendChild(listItem);
-  }
+  window.runtime.ResolveFilePaths(files)
+  .then(res => {
+    resultSource.innerText = "success";
+    resultList.innerHTML = "";
+    for (var item of res) {
+      const listItem = document.createElement('li');
+      listItem.innerText = item.path;
+      resultList.appendChild(listItem);
+    }
+  })
+  .catch(err => {
+    resultSource.innerText = err;
+    resultList.innerHTML = "";
+    console.log(err);
+  })
 });

@@ -32,6 +32,6 @@ require (
 	golang.org/x/text v0.9.0 // indirect
 )
 
-replace github.com/wailsapp/wails/v2 => ./wails-v2
+replace github.com/wailsapp/wails/v2 => ./local/wails/v2
 
-replace github.com/wailsapp/go-webview2 => github.com/ayatkyo/go-webview2 v0.0.0-20230713201112-2d73ea20873e
+replace github.com/wailsapp/go-webview2 => ./local/go-webview2
